@@ -82,6 +82,10 @@ document.querySelector(".btn-hold").addEventListener("click", function(){
            document.getElementById("name-" + activePlayer).textContent = "Та яллаа.";
            document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
            document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
+           
+           document.getElementById('current-' + activePlayer).textContent = '0';
+           diceDom.style.display = "none";
+           
         } else {
            // Ээлжийн оноог нь 0 болгоно.
            switchToNextPlayer();
@@ -101,7 +105,7 @@ function switchToNextPlayer(){
     document.querySelector(".player-0-panel").classList.toggle("active");
     document.querySelector(".player-1-panel").classList.toggle("active");
     // Шоог түр алга болгоно.
-    /*diceDom.style.display = "none"; */
+    diceDom.style.display = "none"; 
 }
 
 //Шинэ тоглоом эхлүүлэх товчны эвент листенер
