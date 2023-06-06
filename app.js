@@ -79,7 +79,7 @@ document.querySelector(".btn-hold").addEventListener("click", function(){
         if(scores[activePlayer] >= 100){
            //Тоглоомыг дууссан төлөвт оруулна.
            isNewGame = false;
-           document.getElementById("name-" + activePlayer).textContent = "Та яллаа.";
+           /*document.getElementById("name-" + activePlayer).textContent = "Та яллаа.";*/
            document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
            document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
            
