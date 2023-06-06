@@ -101,7 +101,7 @@ function switchToNextPlayer(){
     document.querySelector(".player-0-panel").classList.toggle("active");
     document.querySelector(".player-1-panel").classList.toggle("active");
     // Шоог түр алга болгоно.
-    /*diceDom.style.display = "none"; */ 
+    /*diceDom.style.display = "none"; */
 }
 
 //Шинэ тоглоом эхлүүлэх товчны эвент листенер
